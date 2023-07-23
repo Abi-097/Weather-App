@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="style.css" />
+<!-- differ key <-- it will download the js file while html is executing.-->
+    <script src="script.js" defer></script> 
+  </head>
+  <body>
+    <div class="card">
+      <h2>Weather Application</h2>
+      <div class="search">
+        <input
+          type="text"
+          id="search"
+          value=""
+          placeholder="Search City"
+          spellcheck="false"
+        />
+        &nbsp;
+        <button class="button">
+          <div class="button-icon">
+            <img src="images/search.png" width="20px" height="20px" />
+          </div>
+        </button>
+      </div>
+      <div class="weather">
+        <!-- any  random image -->
+        <img src="images/wind.png" class="weather-icon" />
+        <h2 class="temp">22°C</h2>
+        <h3 class="city">Colombo</h3>
+        <div class="details">
+          <div class="col">
+            <img src="images/humidity.png" />
+            <div>
+              <p class="humidity">50%</p>
+              <p class="humidity-text">Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="images/wind.png" />
+            <div>
+              <p class="wind">50 km/h</p>
+              <p class="wind-text">Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+<!-- differ key usage -->
+
+<!--  1. When the browser encounters the above <script> tag with the "defer" attribute, it will begin downloading the script.js file immediately.
+2. The browser continues parsing the rest of the HTML document while the script is being downloaded in the background.
+3.Once the HTML parsing is complete, the browser will then execute the deferred script. This ensures that the script executes after the entire DOM has been loaded and can access all the elements in the document safely.  -->

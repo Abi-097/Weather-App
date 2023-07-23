@@ -1,0 +1,5 @@
+https://api.openweathermap.org/data/2.5/weather?q=colombo&appid=925ddf77580b017414b293da38215ce3&units=metric
+
+
+{"coord":{"lon":79.8478,"lat":6.9319},"weather":[{"id":804,"main":"Clouds","description":"overcast clouds","icon":"04d"}],"base":"stations","main":{"temp":30.97,"feels_like":37.97,"temp_min":30.97,"temp_max":30.97,"pressure":1010,"humidity":75,"sea_level":1010,"grnd_level":1009},"visibility":10000,"wind":{"speed":7.5,"deg":254,"gust":12.36},"clouds":{"all":88},"dt":1690016973,"sys":{"type":1,"id":9098,"country":"LK","sunrise":1689985975,"sunset":1690030847},"timezone":19800,"id":1248991,"name":"Colombo","cod":200}
+
